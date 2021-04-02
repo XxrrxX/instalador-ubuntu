@@ -8,12 +8,12 @@ pkg upgrade
 clear
 echo "Creando capetas..."|lolcat -a -d 50
 cd ../
-mkdir ubuntu
-cd ubuntu/
+git clone https//:github.com/mfdgaming/ubuntu-in-termux
 clear
 echo "Instalando ubuntu..."|lolcat -a -d 50
-pkg install proot-distro
-prrot-distro install ubuntu-20.04
+pkg install proot
+cd ubuntu-in-termux/
+sh ubuntu.sh
 clear
 echo "Ubuntu instalado..."|lolcat -a -d 50
 clear
