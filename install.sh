@@ -18,4 +18,4 @@ clear
 echo "Ubuntu instalado..."|lolcat -a -d 50
 clear
 echo "Ejecutando ubuntu..."|lolcat -a -d 50
-
+./startubuntu.sh
