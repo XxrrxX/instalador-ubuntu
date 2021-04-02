@@ -12,9 +12,10 @@ mkdir ubuntu
 cd ubuntu/
 clear
 echo "Instalando ubuntu..."|lolcat -a -d 50
-wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/DesktopEnvironment/Apt/Xfce4/de-apt-xfce4.sh && bash de-apt-xfce4.sh
+pkg install proot-distro
+prrot-distro install ubuntu-20.04
 clear
 echo "Ubuntu instalado..."|lolcat -a -d 50
 clear
 echo "Ejecutando ubuntu..."|lolcat -a -d 50
-sh de-apt-xfce4.sh
+prrot-distro login ubuntu-20.04
