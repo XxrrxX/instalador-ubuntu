@@ -1,2 +1,2 @@
-# instalador-ubuntu-termux
-Instalador ubuntu termux
+# instalador
+Instalador 
