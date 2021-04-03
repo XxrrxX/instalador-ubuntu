@@ -15,7 +15,7 @@ cd ubuntu-in-termux/
 chmod 777 ubuntu.sh
 clear
 echo "Ubuntu instalado..."|lolcat -a -d 50
-./ubuntu.sh
+bash ubuntu.sh
 clear
 echo "Ejecutando ubuntu..."|lolcat -a -d 50
 ./startubuntu.sh
