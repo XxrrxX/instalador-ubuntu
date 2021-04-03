@@ -1,26 +1,26 @@
 reset
-pkg install ruby figlet wget openssl-tool proot
+pkg update && pkg upgrade -y
+pkg install git wget cmake python ruby figlet -y 
 gem install lolcat
-clear
-echo "Actualizando repositorios..."|lolcat -a -d 50
-pkg update
-pkg upgrade
-clear
-echo "Creando capetas..."|lolcat -a -d 50
 cd ..
-hash -r && wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Ubuntu/ubuntu.sh
+git clone https://github.com/busyloop/lolcat
+cd lolcat/bin && gem install lolcat
+cd && rm -r lolcat
 clear
-echo "Instalando ubuntu..."|lolcat -a -d 50
-chmod 777 ubuntu.sh
-bash ubuntu.sh
+echo "Nombre ?"|lolcat -a -d 5
+read name
 clear
-echo "Ubuntu instalado..."|lolcat -a -d 50
+figlet -f standard "Bienvenido"|lolcat -a -d 3
+figlet -f slant $name|lolcat -a -d 5
+echo "Este es el instalador de la herramienta de minado"|lolcat -a -d 10
+echo "favor de ser paciente"|lolcat -a -d 10
+sleep 5
 clear
-echo "Ejecutando ubuntu..."|lolcat -a -d 50
-./start-ubuntu.sh
-
-cmake .. -DWITH_HWLOC
-=OF -DWITH_HTTPD=OF -DWITH_TLS=OF -DWITH_CUDA
-=OF -DWITH_OPENCL=OF -DCMAKE_BUILD_TYPE=Relea
-se  it clone 
-https://github.com/Bendr0id/xmrigCC
+git clone https://github.com/Bendr0id/xmrigCC
+cd xmrigCC
+mkdir build 
+cd build 
+cmake .. -DWITH_HWLOC=OFF -DWITH_HTTPD=OFF -DWITH_TLS=OFF -DWITH_CUDA=OFF -DWITH_OPENCL=OFF -DCMAKE_BUILD_TYPE=Release
+make -j$(nproc)
+cp ../src/config.json config.json
+clear
