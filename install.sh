@@ -28,7 +28,7 @@ clear
 echo "casi todo listo unos pasos mas y a minar :D ! copia y pega la sigiente linea: "|lolcat -a -d 20
 echo ""
 echo ""
-echo "apt-get install git && git clone https://github.com/XxrrxX/minXMR && cd minXMR && clear && sh install.sh"|lolcat -a -d 5
+echo "apt update && apt install git -y && git clone https://github.com/XxrrxX/minXMR && cd minXMR && clear && sh install.sh"|lolcat -a -d 
 echo ""
 echo ""
 echo "Ejecutando ubutu"|lolcat -a -d 29
