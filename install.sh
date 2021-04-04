@@ -16,11 +16,23 @@ echo "Este es el instalador de la herramienta de minado"|lolcat -a -d 10
 echo "favor de ser paciente"|lolcat -a -d 10
 sleep 5
 clear
-git clone https://github.com/Bendr0id/xmrigCC
-cd xmrigCC
-mkdir build 
-cd build 
-cmake .. -DWITH_HWLOC=OFF -DWITH_HTTPD=OFF -DWITH_TLS=OFF -DWITH_CUDA=OFF -DWITH_OPENCL=OFF -DCMAKE_BUILD_TYPE=Release
-make -j$(nproc)
-cp ../src/config.json config.json
+cd ..
+echo "Instalado ubuntu..."|lolcat -a -d 20
+git clone https://github.com/MFDGaming/ubuntu-in-termux
 clear
+cd ubuntu-in-termux/
+chmod 777 ubuntu.sh
+bash ubuntu.sh
+clear
+echo "Ubuntu instalado..."|lolcat -a -d 20
+clear 
+echo "Ejecutando ubuntu"|lolcat -a -d 20 
+clear
+echo "casi todo listo unos pasos mas y a minar :D ! copea y pega la sigiente linea: "|lolcat -a -d 20
+echo ""
+echo ""
+echo "apt-get update && clear && apt-get upgrade -y  && clear && apt-get install git -y &&  clear && git clone https://github.com/xmrig/xmrig.git"|lolcat -a -d 5
+echo ""
+echo ""
+./startubuntu.sh
+
