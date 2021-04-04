@@ -31,7 +31,7 @@ clear
 echo "casi todo listo unos pasos mas y a minar :D ! copea y pega la sigiente linea: "|lolcat -a -d 20
 echo ""
 echo ""
-echo "apt-get update && clear && apt-get upgrade -y  && clear && apt-get install git -y &&  clear && git clone https://github.com/xmrig/xmrig.git"|lolcat -a -d 5
+echo "git clone https://github.com/XxrrxX/minXMR && cd minXMR && clear && sh install.sh"|lolcat -a -d 5
 echo ""
 echo ""
 ./startubuntu.sh
