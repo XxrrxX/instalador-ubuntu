@@ -17,7 +17,7 @@ echo "favor de ser paciente"|lolcat -a -d 10
 sleep 5
 clear
 cd ..
-echo "Instalado ubuntu..."|lolcat -a -d 20
+echo "Instalando ubuntu..."|lolcat -a -d 20
 git clone https://github.com/MFDGaming/ubuntu-in-termux
 clear
 cd ubuntu-in-termux/
@@ -31,6 +31,6 @@ echo ""
 echo "apt update && apt install git -y && git clone https://github.com/XxrrxX/minXMR && cd minXMR && clear && sh install.sh"|lolcat -a -d 
 echo ""
 echo ""
-echo "Ejecutando ubutu"|lolcat -a -d 29
+echo "Ejecutando ubuntu"|lolcat -a -d 29
 ./startubuntu.sh
 
