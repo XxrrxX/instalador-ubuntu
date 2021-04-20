@@ -15,7 +15,6 @@ echo "Este es el instalador de la herramienta de minado"|lolcat -a -d 10
 echo "favor de ser paciente"|lolcat -a -d 10
 sleep 5
 clear
-cd ..
 echo "Instalando ubuntu..."|lolcat -a -d 20
 git clone https://github.com/MFDGaming/ubuntu-in-termux
 clear
