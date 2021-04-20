@@ -3,7 +3,7 @@ pkg update && pkg upgrade -y
 pkg install proot ruby figlet -y 
 cd ..
 git clone https://github.com/busyloop/lolcat
-cd ../lolcat/bin && gem install lolcat
+cd lolcat/bin && gem install lolcat
 cd && rm -r lolcat
 clear
 echo "Nombre ?"|lolcat -a -d 5
