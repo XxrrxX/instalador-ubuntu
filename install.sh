@@ -1,7 +1,6 @@
 reset
 pkg update && pkg upgrade -y
 pkg install proot ruby figlet -y 
-gem install lolcat
 cd ..
 git clone https://github.com/busyloop/lolcat
 cd lolcat/bin && gem install lolcat
